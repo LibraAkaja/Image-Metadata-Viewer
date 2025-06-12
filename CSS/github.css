@@ -1,0 +1,32 @@
+.gitHubBox{
+    margin: 20px 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 3px 3.5px 3px 3.5px;
+    border-radius: 0.675rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gitHubStar{
+    all: unset;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0.5rem;
+    background: rgb(0, 0, 0,0.5); 
+}
+
+.gitHubStar:hover{
+    transition: background-color 0.5s ease-in-out;
+    background-color: black;
+}
+
+.gitHubBox:hover{
+    border: 2px solid black;
+}
+
+.gitHubStar .githubLogo{
+    display: inline-flex;
+    width: 16px;
+}
