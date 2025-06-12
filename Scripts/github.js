@@ -14,14 +14,14 @@ fetch(`https://api.github.com/repos/${username}/${repo}`)
 import { changeCSS } from "./dynamic.js";
 
 document.querySelector(".gitHubStar").addEventListener("mouseenter",()=>{
-    document.querySelector("#star").src = "/Assets/star-yellow.svg";
+    document.querySelector("#star").src = "Assets/star-yellow.svg";
 });
 
 document.querySelector(".gitHubStar").addEventListener("mouseleave",()=>{
     changeCSS("#star","opacity","0.8");
     changeCSS("#star","transition","opacity 0.4s ease");
     setTimeout(()=>{
-        document.querySelector("#star").src = "/Assets/star-white.svg";
+        document.querySelector("#star").src = "Assets/star-white.svg";
         changeCSS("#star","opacity","1")
     },500);
 });
