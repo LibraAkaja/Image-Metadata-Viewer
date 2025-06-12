@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url("/Assets/filip-kvasnak-ThFBfl1JTI8-unsplash.png") no-repeat center center fixed;
+  filter: brightness(0.90);
+  background-size: cover;
+  transform: scale(1.05);
+}
+
+.root{
+    height: 95vh;
+    width: 90vw;
+    border-radius: 0.5rem;
+    background-color: rgb(128, 128, 128, 0.25);
+    backdrop-filter: blur(2px);
+    overflow-y: visible;
+    scrollbar-width: none;
+}
+
+p{
+    color: rgb(255, 240, 240);
+    font-family: 'Times New Roman', Times, serif ;
+    text-align: justify;
+    /* border: 2px solid white; */
+    padding: 20px 20px 0px 20px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+#p1{
+    font-size: 50px;
+}
+
+#p2{
+    padding-top: 0px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+#p2 a{
+    color: white;
+    outline: none;
+}
+
+.imgPrev{
+    width: 85%;
+    border-radius: 0.75rem;
+    border: 2px solid rgb(255, 240, 240);
+    margin: 25px 0px 20px 18px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPrev img{
+    width: 100%;
+    transform: scale(1.15);
+    filter: brightness(0.8);
+}
+
+#p3{
+    font-family: cursive;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    font-size: 1rem;
+    text-align: center;
+    /* border: 2px solid white; */
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    font-size: 25px;
+    color: aliceblue;
+    border: 2px solid rgb(255, 240, 240);
+    border-radius: 0.5rem;
+    padding: 5px 10px 5px 10px;
+    margin: 20px 20px;
+    letter-spacing: 1px;
+}
