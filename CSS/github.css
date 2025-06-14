@@ -25,6 +25,8 @@
 
 .gitHubBox:hover{
     border: 2px solid black;
+    scale: 1.05;
+    transition: scale 0.5s ease-in-out;
 }
 
 .gitHubStar .githubLogo{
