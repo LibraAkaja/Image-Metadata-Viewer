@@ -1,5 +1,5 @@
 .root{
-    height: 95vh;
+    height: 85vh;
     width: 90vw;
     border-radius: 0.5rem;
     background-color: rgb(128, 128, 128, 0.25);
@@ -148,5 +148,8 @@ button:hover{
         font-size: 70px;
         overflow: visible;
         text-align: center;
+    }
+    #p2{
+        overflow: visible;
     }
 }
