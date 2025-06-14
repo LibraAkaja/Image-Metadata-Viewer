@@ -16,6 +16,7 @@ p{
     padding: 20px 20px 0px 20px;
     letter-spacing: 5px;
     margin-top: 0px;
+    user-select: none;
 }
 
 #p1{
@@ -78,6 +79,13 @@ button{
     letter-spacing: 1px;
 }
 
+button:hover{
+    background-color: rgba(0, 0, 0,0.5);
+    font-weight: 500;
+    scale: 1.05;
+    transition: background-color 0.5s ease-in-out, scale 0.5s ease-in-out;
+}
+
 @media only screen and (min-width: 321px){
     p{
         padding: 10px 20px 0px 20px;
@@ -124,5 +132,21 @@ button{
         top: 30%;
         left: 50px;
         font-size: xx-large;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .root{
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #p1{
+        /* width: 20ch; */
+        font-size: 70px;
+        overflow: visible;
+        text-align: center;
     }
 }
