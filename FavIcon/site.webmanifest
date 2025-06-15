@@ -1,8 +1,8 @@
 {
   "name": "LibraAkaja",
   "short_name": "LA",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/Image-Metadata-Viewer/index.html",
+  "scope": "/Image-Metadata-Viewer/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#223148",
