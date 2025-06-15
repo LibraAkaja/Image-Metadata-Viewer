@@ -50,7 +50,6 @@ p{
 .imgPrev img{
     width: 100%;
     transform: scale(1.15);
-    filter: brightness(0.8);
 }
 
 #prevImg{
@@ -64,7 +63,7 @@ p{
     left: 0%;
     font-size: 1rem;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 button{
