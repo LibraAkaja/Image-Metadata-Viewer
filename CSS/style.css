@@ -13,10 +13,10 @@ p{
     color: rgb(255, 240, 240);
     font-family: 'Times New Roman', Times, serif ;
     text-align: justify;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     padding: 20px 20px 0px 20px;
     letter-spacing: 5px;
-    margin-top: 25px;
+    margin-top: 33px;
     user-select: none;
 }
 
