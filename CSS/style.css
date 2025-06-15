@@ -13,7 +13,7 @@ p{
     color: rgb(255, 240, 240);
     font-family: 'Times New Roman', Times, serif ;
     text-align: justify;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     padding: 20px 20px 0px 20px;
     letter-spacing: 5px;
     margin-top: 25px;
@@ -40,7 +40,7 @@ p{
     width: 85%;
     border-radius: 0.75rem;
     border: 2px solid rgb(255, 240, 240);
-    margin: 30px 0px 20px 18px;
+    margin: 40px 0px 30px 20px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -150,5 +150,9 @@ button:hover{
     }
     #p2{
         overflow: visible;
+        margin-top: 15px;
+    }
+    button{
+        margin-bottom: -5px;
     }
 }

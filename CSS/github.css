@@ -1,5 +1,5 @@
 .gitHubBox{
-    margin: 15px 20px;
+    margin: 20px 20px;
     height: fit-content;
     width: fit-content;
     padding: 3px 3.5px 3px 3.5px;
@@ -34,10 +34,4 @@
 .gitHubStar .githubLogo{
     display: inline-flex;
     width: 16px;
-}
-
-@media only screen and (min-width: 321px){
-    .gitHubBox{
-        margin: 10px 20px;
-    }
 }
