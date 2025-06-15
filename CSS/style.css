@@ -1,6 +1,6 @@
 .root{
-    /* height: 85vh; */
-    height: auto;
+    height: 85vh;
+    /* height: auto; */
     width: 90vw;
     border-radius: 0.5rem;
     background-color: rgb(128, 128, 128, 0.25);
