@@ -1,12 +1,16 @@
 {
-  "name": "LibraAkaja",
-  "short_name": "LA",
+  "name": "Image Metadata Viewer",
+  "short_name": "IMV",
+  "description": "View EXIF, IPTC, and XMP metadata from images",
   "start_url": "/Image-Metadata-Viewer/index.html",
+  "lang": "en",
+  "dir": "ltr",
   "scope": "/Image-Metadata-Viewer/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#223148",
   "background_color": "#223148",
+  "categories": ["tools", "photography", "utilities"],
   "icons": [
     {
       "src": "web-app-manifest-192x192.png",
