@@ -32,7 +32,7 @@
     transition: scale 0.5s ease-in-out;
 }
 
-.gitHubStar .githubLogo{
+.gitHubStar .githubLogo img{
     display: inline-flex;
     width: 16px;
 }
