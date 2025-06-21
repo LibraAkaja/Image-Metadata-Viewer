@@ -19,7 +19,7 @@
     <section class="root">
         <p id="p1">Image Metadata Viewer</p>
         <p id="p2">Developed by <a href="https://github.com/LibraAkaja" target="_blank" rel="noopener noreferrer">Biraj Adhikari</a></p>
-        <div class="imgPrev">
+        <div class="imgPrev" id="imgPrev1">
             <img src="Assets/filip-kvasnak-ThFBfl1JTI8-unsplashE.png" id="prevImg">
             <p id="p3">Supports EXIF + IPTC/XMP</p>
         </div>
@@ -33,6 +33,20 @@
             </a>
         </div>
     </section>
+    <section class="child" id="sibling1">
+        <div class="uploadBtn">
+            <input type="file" accept="image" id="uploadImg" class="hidden">
+            <span class="input">
+                Choose an Image&nbsp;
+            </span>
+            <img src="Assets/attach.svg" width="20">
+        </div>
+        <img class="imgPrev" src="#" alt="Image Preview" id="imgPrev2">
+        <button id="useImg">Use this Image</button>
+        <p class="metaData"></p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/exifreader@4.12.0/dist/exif-reader.min.js"></script>
+    <script src="Scripts/main.js" type="module"></script>
     <script src="Scripts/github.js" type="module"></script>
     <script src="Scripts/dynamic.js"></script>
 </body>
