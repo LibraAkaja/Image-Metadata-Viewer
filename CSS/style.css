@@ -1,19 +1,25 @@
-.root{
-    height: 85vh;
-    /* height: auto; */
+.root,.child{
+    min-height: 85vh;
     width: 90vw;
     border-radius: 0.5rem;
     background-color: rgb(128, 128, 128, 0.25);
     backdrop-filter: blur(2px);
     overflow-y: visible;
     scrollbar-width: none;
+    z-index: 0;
+}
+
+.child{
+    padding: 10px;
+    z-index: -1;
+    position: absolute;
+    visibility: hidden;
 }
 
 p{
     color: rgb(255, 240, 240);
     font-family: 'Times New Roman', Times, serif ;
     text-align: justify;
-    /* border: 2px solid white; */
     padding: 20px 20px 0px 20px;
     letter-spacing: 5px;
     margin-top: 40px;
@@ -86,6 +92,78 @@ button:hover{
     transition: background-color 0.5s ease-in-out, scale 0.5s ease-in-out;
 }
 
+.hidden{
+    display: none;
+}
+
+.uploadBtn{
+    border-radius: 1rem;
+    width: 25ch;
+    aspect-ratio: 4;
+    cursor: default;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 5px;
+    font-size: large;
+    color: rgb(255, 240, 240);
+    letter-spacing: 1px;
+    margin: 5px 10px;
+}
+
+.uploadBtn img{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgba(245, 222, 179,0.75);
+    border-radius: 20%;
+}
+
+.uploadBtn img:hover{
+    background-color: rgba(245, 222, 179,1);
+    transition: background-color 0.25s ease-in-out;
+}
+
+#imgPrev2{
+    display: none;
+    max-width: 300px;
+    border: 2px solid black;
+    margin-left: 23px;
+    margin-top: 20px;
+    filter: brightness(0.75);
+}
+
+#useImg{
+    border: 2px solid black;
+    color: black;
+    scale: 0.9;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: 500;
+    visibility: hidden;
+}
+
+#useImg:hover{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.metaData{
+    width: 100%;
+    min-height: 55vh;
+    padding: 20px;
+    border-radius: 0.25rem;
+    margin-top: 25px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.25);
+    backdrop-filter: blur(0px);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.metadata-table{
+    overflow-x: scroll;
+}
+
 @media only screen and (min-width: 321px){
     p{
         padding: 10px 20px 0px 20px;
@@ -136,8 +214,10 @@ button:hover{
 }
 
 @media only screen and (min-width: 768px){
-    .root{
+    .root,.child{
         width: 75vw;
+    }
+    .root{
         display: flex;
         flex-direction: column;
         justify-content: center;
