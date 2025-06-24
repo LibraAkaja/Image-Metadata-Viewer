@@ -11,6 +11,7 @@
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     border: 2px solid transparent;
+    will-change: scale;
 }
 
 .gitHubStar{
@@ -21,18 +22,50 @@
     background: rgb(0, 0, 0,0.5); 
 }
 
-.gitHubStar:hover{
-    transition: background-color 0.5s ease-in-out;
-    background-color: black;
-}
-
-.gitHubBox:hover{
-    border: 2px solid black;
-    scale: 1.05;
-    transition: scale 0.5s ease-in-out;
-}
-
 .gitHubStar .githubLogo img{
     display: inline-flex;
     width: 16px;
+}
+
+@keyframes gitHubStarAnimation{
+    from{
+        background-color: rgb(0, 0, 0,0.5);
+    }
+    to{
+        background-color: black;
+    }
+}
+
+@keyframes gitHubBoxAnimation{
+    from{
+        border: 2p solid transparent;
+        scale: 1;
+    }
+    to{
+        border: 2px solid black;
+        scale: 1.05;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .gitHubStar{
+        animation: gitHubStarAnimation 2.5s ease-in-out 5s infinite alternate;
+    }
+
+    .gitHubBox{
+        animation: gitHubBoxAnimation 2.5s ease-in-out 5s infinite alternate;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .gitHubStar:hover{
+        transition: background-color 0.5s ease-in-out;
+        background-color: black;
+    }
+
+    .gitHubBox:hover{
+        border: 2px solid black;
+        scale: 1.05;
+        transition: scale 0.5s ease-in-out;
+    }
 }
