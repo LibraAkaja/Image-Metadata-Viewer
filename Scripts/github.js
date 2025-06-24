@@ -13,15 +13,40 @@ fetch(`https://api.github.com/repos/${username}/${repo}`)
 
 import { changeCSS } from "./dynamic.js";
 
-document.querySelector(".gitHubStar").addEventListener("mouseenter",()=>{
-    document.querySelector("#star").src = "Assets/star-yellow.svg";
-});
+let intervalID = null;
 
-document.querySelector(".gitHubStar").addEventListener("mouseleave",()=>{
-    changeCSS("#star","opacity","0.8");
-    changeCSS("#star","transition","opacity 0.4s ease");
-    setTimeout(()=>{
-        document.querySelector("#star").src = "Assets/star-white.svg";
-        changeCSS("#star","opacity","1")
-    },500);
-});
+// window.addEventListener("resize",()=>{
+//     const width = window.innerWidth;
+//     if(width < 768){
+//         if(!intervalID){
+//             intervalID = setInterval(() => {
+//                 changeCSS("#star","opacity","0.8");
+//                 changeCSS("#star","transition","opacity 0.4s ease");
+//                 setTimeout(()=>{
+//                     document.querySelector("#star").src = "Assets/star-yellow.svg";
+//                 },400);
+//                 setTimeout(()=>{
+//                     document.querySelector("#star").src = "Assets/star-white.svg";
+//                     changeCSS("#star","opacity","1");
+//                 });
+//             }, 5000);
+//         }
+//     }
+//     else{
+//         clearInterval(intervalID);
+//         document.querySelector("#star").src = "Assets/star-white.svg";
+//         document.querySelector(".gitHubStar").addEventListener("mouseenter",()=>{
+//             document.querySelector("#star").src = "Assets/star-yellow.svg";
+//         });
+
+//         document.querySelector(".gitHubStar").addEventListener("mouseleave",()=>{
+//             changeCSS("#star","opacity","0.8");
+//             changeCSS("#star","transition","opacity 0.4s ease");
+//             setTimeout(()=>{
+//                 document.querySelector("#star").src = "Assets/star-white.svg";
+//                 changeCSS("#star","opacity","1")
+//             },500);
+//         });
+
+//     }
+// });
